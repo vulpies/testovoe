@@ -1,0 +1,111 @@
+.color {
+    color: red;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.main {
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        margin-top: 50px;
+    }
+
+    &__table {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        border-bottom: 2px solid black;
+
+        &:last-child {
+            border-bottom: unset;
+        }
+
+        p {
+            align-self: center;
+            border-left: 2px solid black;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+            vertical-align: sub;
+            font-size: 20px;
+            &:first-child {
+                border-left: unset;
+            }
+        }
+
+        &-wrapper {
+            width: 90%;
+            margin: 0 auto;
+            border: 2px solid black;
+        }
+    }
+
+    &__statistics {
+        margin: 10px 0 10px 10px;
+        font-size: 20px;
+
+        span {
+            font-weight: bold;
+        }
+
+        p {
+            padding-bottom: 5px;
+        }
+    }
+
+    &__btn {
+        margin-top: 15px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 6px;
+        background-color: #f9f9e1;
+        border: 2px solid #e0d0d0;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #ffff63;
+            border: 2px solid #f6a416;
+            color: #420606;
+            text-shadow: 0px 0px 3px #e59718;
+        }
+    }
+
+    &__checkbox {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+    }
+
+    &__search {
+        width: 90%;
+        display: flex;
+        margin: 20px auto 0;
+
+        input {
+            width: 35%;
+            padding: 10px 7px;
+            font-size: 22px;
+        }
+
+        button {
+            font-size: 17px;
+            width: 120px;
+            padding: 5px;
+            background-color: #f3e8e8;
+            margin-left: 5px;
+
+            &:hover {
+                background-color: #ea9d9d;
+            }
+        }
+    }
+}
